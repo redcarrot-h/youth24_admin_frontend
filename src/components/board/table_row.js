@@ -10,7 +10,7 @@ const TableRow = (props) => {
       <td>
         <Link to={`/board/view/${board.qnaKeynum}`}>{board.qnaTitle}</Link>
       </td>
-      <td>{board.userKeynum}</td>
+      <td>{board['membersDTO']['userId']}</td>
       <td>{board.qnaReadcount}</td>
       <td>{board.qnaSecret === 1 ? '비밀글' : '공개글'}</td>
     </tr>
